@@ -125,8 +125,6 @@ def fetch_url(url, referer = None, retries = 1, dimension = False):
 
             if 'image' in content_type:
                 i = Image(content)
-                logging.info(i.width, i.height)
-                
                 return (i.width,i.height)
                 
                 # p = ImageFile.Parser()
